@@ -1,0 +1,11 @@
+<view class='container'>
+  <view wx:if="{{logs.length}}">
+    <view class='logs'>
+    <view class='item' wx:for="{{logs}}" wx:key="index">
+      <text class='title'>title: {{item.title}}</text>
+      <text class='actions'>{{item.actions}}</text>
+      <text class='timestamp'>{{item.timestamp}}</text>
+    </view>
+  </view>
+  </view>
+</view>
